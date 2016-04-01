@@ -1,0 +1,14 @@
+name: apache-spark-notebook
+summary: A web-based IPython Notebook for Apache Spark.
+maintainer: Big Data Team <bigdata@lists.ubuntu.com>
+description: |
+  The IPython Notebook is an interactive computational environment, in which
+  you can combine code execution, rich text, mathematics, plots, and rich media.
+  IPython Notebook and Spark’s Python API are a powerful combination for data
+  science.
+tags: ["bigdata", "hadoop", "apache"]
+subordinate: true
+requires:
+  spark:
+    interface: spark
+    scope: container

@@ -1,0 +1,13 @@
+# This file contains values that are likely to change per distribution.
+# The aim is to make it easier to update / extend the charms with
+# minimal changes to the shared code in charmhelpers.
+vendor: apache
+dirs:
+    notebooks:
+        path: '/var/lib/spark-notebook/notebook'
+        owner: 'ubuntu'
+        group: 'hadoop'
+ports:
+    notebook:
+        port: 8880
+        exposed_on: 'notebook'
